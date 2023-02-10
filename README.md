@@ -6,11 +6,10 @@
 - Stitches
 
 # Setup and Structure
-- [ ] Create Next App
-- [ ] Install Desgin System & ESLint
-- [ ] General clean up and setup
+- [x] Create Next App
+- [x] Install Design System & ESLint
+- [x] General clean up and setup
+- [ ] Page Extensions
 
 # Register / Login
 - [ ] Home visual Structure
-
-...
