@@ -20,6 +20,6 @@
 - [x] Username Form Component
 - [x] React Hook Form with Zod
 - [x] Register Visual Structure
-- [ ] Register Form
+- [x] Register Form and flow
 - [ ] SetUp Prisma
 - [ ] Persist user
