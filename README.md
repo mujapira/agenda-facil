@@ -3,7 +3,11 @@
 # Main Tecnologies
 - Prisma
 - Next.js
+
+# Other Technologies
 - Stitches
+- React Hook Form
+- Zod
 
 # Setup
 - [x] Create Next App
@@ -11,6 +15,11 @@
 - [x] General clean up and setup
 - [x] Page Extensions
 
-# Register / Login
+# Register / Home
 - [x] Home Visual Structure
-- [x] Username Form
+- [x] Username Form Component
+- [ ] React Hook Form with Zod
+- [ ] Register Visual Structure
+- [ ] Register Form
+- [ ] SetUp Prisma
+- [ ] Persist user
