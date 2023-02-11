@@ -18,8 +18,8 @@
 # Register / Home
 - [x] Home Visual Structure
 - [x] Username Form Component
-- [ ] React Hook Form with Zod
-- [ ] Register Visual Structure
+- [x] React Hook Form with Zod
+- [x] Register Visual Structure
 - [ ] Register Form
 - [ ] SetUp Prisma
 - [ ] Persist user
