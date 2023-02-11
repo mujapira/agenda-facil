@@ -5,11 +5,12 @@
 - Next.js
 - Stitches
 
-# Setup and Structure
+# Setup
 - [x] Create Next App
 - [x] Install Design System & ESLint
 - [x] General clean up and setup
-- [ ] Page Extensions
+- [x] Page Extensions
 
 # Register / Login
-- [ ] Home visual Structure
+- [x] Home Visual Structure
+- [x] Username Form
