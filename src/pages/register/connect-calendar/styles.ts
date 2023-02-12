@@ -1,4 +1,4 @@
-import { Box, styled } from '@mujapira-ui/react'
+import { Box, styled, Text } from '@mujapira-ui/react'
 
 export const ConnectBox = styled(Box, {
   marginTop: '$6',
@@ -16,5 +16,10 @@ export const ConnectItem = styled('div', {
   borderRadius: '$md',
 
   minHeight: '75px',
-  marginBottom: '$2',
+  marginBottom: '$4',
+})
+
+export const AuthError = styled(Text, {
+  color: '#f75a68',
+  marginBottom: '$4',
 })

@@ -29,4 +29,5 @@
 - [x] Visual Structure
 - [x] Next Auth
 - [x] Google Calendar
+- [x] Google Calendar Permissions
 - [ ] 
