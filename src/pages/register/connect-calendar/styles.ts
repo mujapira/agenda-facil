@@ -15,5 +15,6 @@ export const ConnectItem = styled('div', {
   padding: '$4 $6',
   borderRadius: '$md',
 
+  minHeight: '75px',
   marginBottom: '$2',
 })

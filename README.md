@@ -27,4 +27,6 @@
   
 # Connect Calendar 
 - [x] Visual Structure
-- 
+- [x] Next Auth
+- [x] Google Calendar
+- [ ] 

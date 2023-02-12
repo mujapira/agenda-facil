@@ -106,7 +106,7 @@ export default function Register() {
 
         <Button type="submit" disabled={isSubmitting}>
           Próximo passo
-          <ArrowRight />
+          <ArrowRight weight="bold" />
         </Button>
       </Form>
     </Container>

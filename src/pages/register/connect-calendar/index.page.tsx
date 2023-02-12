@@ -32,14 +32,14 @@ export default function Register() {
             size="sm"
             onClick={() => signIn('google')}
           >
-            Conectar
-            <ArrowRight />
+            <span>Conectar</span>
+            <ArrowRight weight="bold" />
           </Button>
         </ConnectItem>
 
         <Button type="submit">
           Próximo passo
-          <ArrowRight />
+          <ArrowRight weight="bold" />
         </Button>
       </ConnectBox>
     </Container>
