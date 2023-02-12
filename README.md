@@ -23,3 +23,7 @@
 - [x] Register Form and flow
 - [ ] SetUp Prisma
 - [ ] Persist user
+- [ ] Cookies
+  
+  # Calendar
+  - []
