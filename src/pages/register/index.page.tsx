@@ -6,6 +6,7 @@ import { z } from 'zod'
 import { Container, Form, Header, FormError } from './styles'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import { api } from '../../lib/axios'
 
 const registerFormSchema = z.object({
   username: z
@@ -46,6 +47,16 @@ export default function Register() {
     },
   })
 
+  async function handleRegister(data: RegisterFormData) {
+    try {
+      await api.post('/users', {
+        name: data.name,
+        username: data.username,
+      })
+    } catch (err) {
+      console.log(err)
+    }
+  }
   const router = useRouter()
 
   useEffect(() => {
@@ -53,10 +64,6 @@ export default function Register() {
       setValue('username', String(router.query.username))
     }
   }, [router.query?.username, setValue])
-
-  function handleRegister(data: RegisterFormData) {
-    console.log(data)
-  }
 
   return (
     <Container>

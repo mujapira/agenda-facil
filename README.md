@@ -21,8 +21,8 @@
 - [x] React Hook Form with Zod
 - [x] Register Visual Structure
 - [x] Register Form and flow
-- [ ] SetUp Prisma
-- [ ] Persist user
+- [x] SetUp Prisma
+- [x] Persist user
 - [ ] Cookies
   
   # Calendar
