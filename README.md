@@ -30,4 +30,6 @@
 - [x] Next Auth
 - [x] Google Calendar
 - [x] Google Calendar Permissions
-- [ ] 
+- [x] Database Structure
+- [x] Adapter
+- [ ] Next Auth Session
