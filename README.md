@@ -47,3 +47,4 @@ npm run dev
 # Availability
 
 - [x] Visual Structure
+- [x] Availability Form
