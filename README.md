@@ -32,4 +32,4 @@
 - [x] Google Calendar Permissions
 - [x] Database Structure
 - [x] Adapter
-- [ ] Next Auth Session
+- [x] Next Auth Session
