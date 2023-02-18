@@ -1,3 +1,4 @@
+import { api } from '@/src/lib/axios'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Button, Checkbox, Heading, MultiStep, Text } from '@mujapira-ui/react'
 import { ArrowRight, Clock } from 'phosphor-react'
@@ -90,9 +91,11 @@ export default function TimeIntervals() {
   const intervals = watch('intervals')
 
   async function handleSetTimeIntervals(data: any) {
-    const formData = data as TimeIntervalsFormOutput
+    const { intervals } = data as TimeIntervalsFormOutput
 
-    console.log(formData)
+    await api.post('/users/time-intervals', {
+      intervals,
+    })
   }
 
   return (

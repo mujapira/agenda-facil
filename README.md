@@ -50,3 +50,4 @@ npm run dev
 - [x] Availability Form
 - [x] Controller Checkbox 
 - [x] Zod validations
+- [x] Authenticated next routes
