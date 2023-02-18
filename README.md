@@ -5,25 +5,25 @@ npx prisma studio
 npm run dev
 ```
 
-# Main Tecnologies
+### Main Tecnologies
 
 - Prisma
 - Next.js
 
-# Other Technologies
+### Other Technologies
 
 - Stitches
 - React Hook Form
 - Zod
 
-# Setup
+### Setup
 
 - [x] Create Next App
 - [x] Install Design System & ESLint
 - [x] General clean up and setup
 - [x] Page Extensions
 
-# Register / Home
+### Register / Home
 
 - [x] Home Visual Structure
 - [x] Username Form Component
@@ -34,7 +34,7 @@ npm run dev
 - [x] Persist user
 - [x] Cookies
 
-# Connect Calendar
+### Connect Calendar
 
 - [x] Visual Structure
 - [x] Next Auth
@@ -44,10 +44,14 @@ npm run dev
 - [x] Adapter
 - [x] Next Auth Session
 
-# Availability
+### Availability
 
 - [x] Visual Structure
 - [x] Availability Form
 - [x] Controller Checkbox 
 - [x] Zod validations
 - [x] Authenticated next routes
+
+### Profile
+- [x] Visual Structure
+- [x] Pesist data
