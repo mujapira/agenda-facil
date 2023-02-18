@@ -55,3 +55,9 @@ npm run dev
 ### Profile
 - [x] Visual Structure
 - [x] Pesist data
+
+### Calendar and Availability
+- [] Page and Visual Structure
+- [] Schedule List
+- [] Comfirm page and Visual Structure
+- [] Calendar time calculation
