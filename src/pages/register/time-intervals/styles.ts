@@ -1,4 +1,4 @@
-import { Box, styled } from '@mujapira-ui/react'
+import { Box, styled, Text, TextInput } from '@mujapira-ui/react'
 
 export const IntervalBox = styled(Box, {
   marginTop: '$6',
@@ -33,8 +33,39 @@ export const IntervalInputs = styled('div', {
   display: 'flex',
   alignItems: 'center',
   gap: '$2',
+  position: 'relative',
 
   'input::-webkit-calendar-picker-indicator': {
-    filter: 'invert(100%) brightness(40%)',
+    display: 'none',
+  },
+  '>div': {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingRight: '$3',
+
+    backgroundColor: '$gray900',
+    borderRadius: '$sm',
+    border: '2px solid transparent',
+    borderColor: '$gray900',
+
+    'svg.disabled': {
+      opacity: '0.5',
+    },
+    '> div': {
+      paddingRight: '0',
+    },
+  },
+})
+
+export const FormError = styled(Text, {
+  color: '#f75a68',
+  marginBottom: '$4',
+})
+
+export const CustomTextInput = styled(TextInput, {
+  padding: '0rem',
+  '&:disabled': {
+    opacity: '.5',
   },
 })

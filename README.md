@@ -48,5 +48,5 @@ npm run dev
 
 - [x] Visual Structure
 - [x] Availability Form
-- [] Controller Checkbox 
-- [] Zod validations
+- [x] Controller Checkbox 
+- [x] Zod validations

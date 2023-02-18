@@ -1,18 +1,12 @@
-import {
-  Button,
-  Checkbox,
-  Heading,
-  MultiStep,
-  Text,
-  TextInput,
-} from '@mujapira-ui/react'
-import { ArrowRight } from 'phosphor-react'
+import { Button, Checkbox, Heading, MultiStep, Text } from '@mujapira-ui/react'
+import { ArrowRight, Clock } from 'phosphor-react'
 import { useForm, useFieldArray, Controller } from 'react-hook-form'
 import { z } from 'zod'
 import { getWeekDays } from '../../../utils/get-week-days'
 import { Container, Header } from '../styles'
-
 import {
+  CustomTextInput,
+  FormError,
   IntervalBox,
   IntervalContainer,
   IntervalDay,
@@ -21,7 +15,26 @@ import {
 } from './styles'
 
 export default function TimeIntervals() {
-  const timeIntervalsFormSchema = z.object({})
+  const timeIntervalsFormSchema = z.object({
+    intervals: z
+      .array(
+        z.object({
+          weekDay: z.number().min(0).max(6),
+          enabled: z.boolean(),
+          startTime: z.string(),
+          endTime: z.string(),
+        }),
+      )
+      .length(7)
+      .transform((intervals) =>
+        intervals.filter((interval) => interval.enabled),
+      )
+      .refine((intervals) => intervals.length > 0, {
+        message: 'Você precisa selecionar pelo menos um dia da semana',
+      }),
+  })
+
+  type TimeIntervalsFormData = z.infer<typeof timeIntervalsFormSchema>
 
   const {
     register,
@@ -51,7 +64,10 @@ export default function TimeIntervals() {
   })
   const intervals = watch('intervals')
 
-  async function handleSetTimeIntervals() {}
+  async function handleSetTimeIntervals(data: TimeIntervalsFormData) {
+    console.log(data)
+  }
+
   return (
     <Container>
       <Header>
@@ -87,27 +103,45 @@ export default function TimeIntervals() {
                   <Text>{weekDays[field.weekDay]}</Text>
                 </IntervalDay>
                 <IntervalInputs>
-                  <TextInput
-                    size="sm"
-                    type="time"
-                    step={60}
-                    disabled={intervals[index].enabled === false}
-                    {...register(`intervals.${index}.startTime`)}
-                  />
-                  <TextInput
-                    size="sm"
-                    type="time"
-                    step={60}
-                    disabled={intervals[index].enabled === false}
-                    {...register(`intervals.${index}.endTime`)}
-                  />
+                  <div>
+                    <CustomTextInput
+                      size="sm"
+                      type="time"
+                      step={60}
+                      disabled={intervals[index].enabled === false}
+                      {...register(`intervals.${index}.startTime`)}
+                    />
+                    {intervals[index].enabled === false ? (
+                      <Clock size={14} weight="bold" className="disabled" />
+                    ) : (
+                      <Clock size={14} weight="bold" className="regular" />
+                    )}
+                  </div>
+                  <div>
+                    <CustomTextInput
+                      size="sm"
+                      type="time"
+                      step={60}
+                      disabled={intervals[index].enabled === false}
+                      {...register(`intervals.${index}.endTime`)}
+                    />
+                    {intervals[index].enabled === false ? (
+                      <Clock size={14} weight="bold" className="disabled" />
+                    ) : (
+                      <Clock size={14} weight="bold" className="regular" />
+                    )}
+                  </div>
                 </IntervalInputs>
               </IntervalItem>
             )
           })}
         </IntervalContainer>
 
-        <Button type="submit">
+        {errors.intervals && (
+          <FormError size="sm">{errors.intervals.message}</FormError>
+        )}
+
+        <Button type="submit" disabled={isSubmitting}>
           Próximo passo
           <ArrowRight weight="bold" />
         </Button>
