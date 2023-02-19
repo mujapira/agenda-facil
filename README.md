@@ -61,3 +61,4 @@ npm run dev
 - [x] Schedule List
 - [x] Comfirm page and Visual Structure
 - [x] Calendar time calculation
+- [x] Calendar final setup

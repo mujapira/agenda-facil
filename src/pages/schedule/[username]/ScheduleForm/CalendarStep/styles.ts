@@ -28,6 +28,13 @@ export const TimePicker = styled('div', {
   padding: '$6 $6 0',
   overflowY: 'scroll',
 
+  scrollbarWidth: 'none',
+  '-ms-overflow-style': 'none',
+
+  '&::-webkit-scrollbar': {
+    display: 'none',
+  },
+
   position: 'absolute',
   top: 0,
   bottom: 0,
@@ -63,6 +70,7 @@ export const TimePickerItem = styled('button', {
   borderRadius: '$sm',
   fontSize: '$sm',
   lineHeight: '$base',
+  fontFamily: '$default',
 
   '&:last-child': {
     marginBottom: '$6',
