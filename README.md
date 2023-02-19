@@ -57,7 +57,7 @@ npm run dev
 - [x] Pesist data
 
 ### Calendar and Availability
-- [] Page and Visual Structure
-- [] Schedule List
-- [] Comfirm page and Visual Structure
+- [x] Page and Visual Structure
+- [x] Schedule List
+- [x] Comfirm page and Visual Structure
 - [] Calendar time calculation
