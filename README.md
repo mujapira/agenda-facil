@@ -62,3 +62,7 @@ npm run dev
 - [x] Comfirm page and Visual Structure
 - [x] Calendar time calculation
 - [x] Calendar final setup
+- [x] Schedule table
+- [ ] Available hours
+- [ ] React Query
+- [ ] Block specic days
