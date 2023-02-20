@@ -24,6 +24,7 @@
     "dayjs": "^1.11.7",
     "nookies": "^2.5.2",
     "phosphor-react": "^1.4.1",
+    "@tanstack/react-query": "^4.20.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.1",
