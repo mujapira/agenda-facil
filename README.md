@@ -63,6 +63,6 @@ npm run dev
 - [x] Calendar time calculation
 - [x] Calendar final setup
 - [x] Schedule table
-- [ ] Available hours
+- [x] Available hours
 - [ ] React Query
 - [ ] Block specic days
