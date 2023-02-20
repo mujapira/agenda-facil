@@ -65,4 +65,4 @@ npm run dev
 - [x] Schedule table
 - [x] Available hours
 - [x] React Query
-- [ ] Block specic days
+- [ ] Block specific days
