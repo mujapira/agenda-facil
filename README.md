@@ -4,6 +4,12 @@
 npx prisma studio
 npm run dev
 ```
+```js
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=docker -p 3306:3306 mysql:latest
+docker start mysql
+docker stop mysql
+docker ps -a
+```
 
 ### Main Tecnologies
 
@@ -65,4 +71,5 @@ npm run dev
 - [x] Schedule table
 - [x] Available hours
 - [x] React Query
-- [ ] Block specific days
+- [x] Block specific days
+- [x] Change to MySQL
