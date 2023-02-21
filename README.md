@@ -80,4 +80,4 @@ docker ps -a
 - [x] Refresh Token
 - [x] Google API and Event
 - [x] SEO
-- [] Deploy 🚀
+- [x] Deploy 🚀 Planet Scale and Vercel
