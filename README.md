@@ -78,6 +78,6 @@ docker ps -a
 - [x] Flow
 - [x] Route
 - [x] Refresh Token
-- [] Google API and Event
+- [x] Google API and Event
 - [] SEO
 - [] Deploy 🚀
