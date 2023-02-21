@@ -79,5 +79,5 @@ docker ps -a
 - [x] Route
 - [x] Refresh Token
 - [x] Google API and Event
-- [] SEO
+- [x] SEO
 - [] Deploy 🚀
