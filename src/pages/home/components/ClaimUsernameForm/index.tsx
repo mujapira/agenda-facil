@@ -45,7 +45,7 @@ export function ClaimUsernameForm() {
         />
         <Button size="sm" type="submit">
           Reservar
-          <ArrowRight />
+          <ArrowRight weight="bold" />
         </Button>
       </Form>
 
