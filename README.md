@@ -76,7 +76,7 @@ docker ps -a
 
 ### Appointment
 - [x] Flow
-- [] Route
+- [x] Route
 - [] Refresh Token
 - [] Google API and Event
 - [] SEO
