@@ -73,3 +73,11 @@ docker ps -a
 - [x] React Query
 - [x] Block specific days
 - [x] Change to MySQL
+
+### Appointment
+- [x] Flow
+- [] Route
+- [] Refresh Token
+- [] Google API and Event
+- [] SEO
+- [] Deploy 🚀
