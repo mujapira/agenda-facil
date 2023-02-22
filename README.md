@@ -33,8 +33,8 @@ Agenda Fácil
 <h3>Clone o projeto e acesse a pasta.</h3>
 
 ```bash
-$ git clone
-$ cd 
+$ git clone git@github.com:mujapira/agenda-facil.git
+$ cd agenda-facil
 ```
 
 <h3>Criar imagem mySQL no docker:</h3>
