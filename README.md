@@ -28,6 +28,14 @@ Agenda Fácil
 - <a href="https://www.npmjs.com/package/@mujapira-ui/react">Design System</a>
 - <a href="https://www.npmjs.com/package/nookies">Nookies</a>
 
+
+<h2 align="center">🐱‍🏍 Galeria </h2>
+<h4 align="center">
+<img src="https://user-images.githubusercontent.com/89225210/220494768-c3dbcebb-be6b-485d-9fb6-a0a0fec5a845.png"/>
+<img src="https://user-images.githubusercontent.com/89225210/220495224-bf358628-a129-4e62-98bf-3eacccfe0e92.png"/>
+
+</h4>
+
 <h2 align="center">🏃‍♂️Instruções</h1>
 
 <h3>Clone o projeto e acesse a pasta.</h3>
