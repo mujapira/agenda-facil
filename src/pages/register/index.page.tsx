@@ -72,10 +72,10 @@ export default function Register() {
 
   return (
     <>
-      <NextSeo title="Crie uma conta | Ignite Call" />
+      <NextSeo title="Crie uma conta | Agenda Fácil" />
       <Container>
         <Header>
-          <Heading as="strong">Bem-vindo ao Ignite Call!</Heading>
+          <Heading as="strong">Bem-vindo ao Agenda Fácil!</Heading>
           <Text>
             Precisamos de algumas informações para criar seu perfil! Ah, você
             pode editar essas informações depois.
@@ -88,7 +88,7 @@ export default function Register() {
           <label>
             <Text size="sm">Nome de usuário</Text>
             <TextInput
-              prefix="ignite.com/"
+              prefix="agenda/"
               placeholder="seu-usuário"
               {...register('username')}
             />

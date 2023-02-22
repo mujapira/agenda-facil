@@ -1,4 +1,4 @@
-# Ignite Call 06
+# Agenda fácil (Ignite Call 06)
 
 ```js
 npx prisma studio
